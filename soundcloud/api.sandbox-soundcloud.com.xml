@@ -285,6 +285,21 @@
 		<resource path="users/{user_id}/followings/{contact_id}.{format}">
 			<param name="user_id" required="true" type="xsd:string" style="query" default="183" />
 			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
+			<method id="get_user_followings" name="GET" apigee:displayName="users/user_id/followings/contact_id (GET)">
+				<apigee:tags>
+					<apigee:tag primary="true">Users</apigee:tag>
+					<apigee:tag>User</apigee:tag>
+					<apigee:tag>Followings</apigee:tag>
+				</apigee:tags>
+				<apigee:authentication required="true" />
+				<apigee:example url="/users/{user_id}/followings/{contact_id}.{format}" />
+				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Checks if the user with the id contact_id is in the givens user's list of contacts.]]></doc>
+			</method>
+		</resource>
+
+		<resource path="users/{user_id}/followings/{contact_id}.{format}">
+			<param name="user_id" required="true" type="xsd:string" style="query" default="183" />
+			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
 			<method id="put_user_followings" name="PUT" apigee:displayName="users/user_id/followings/contact_id (PUT)">
 				<apigee:tags>
 					<apigee:tag primary="true">Users</apigee:tag>
@@ -323,6 +338,21 @@
 				<apigee:authentication required="false" />
 				<apigee:example url="/users/{user_id}/followers.{format}?consumer_key={consumer_key}" />
 				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Returns a collection of users who follow the user with user id]]></doc>
+			</method>
+		</resource>
+
+    <resource path="users/{user_id}/followers/{contact_id}.{format}">
+			<param name="user_id" required="true" type="xsd:string" style="query" default="183" />
+			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
+			<method id="get_user_follower" name="GET">
+				<apigee:tags>
+					<apigee:tag primary="true">Users</apigee:tag>
+					<apigee:tag>User</apigee:tag>
+					<apigee:tag>Followers</apigee:tag>
+				</apigee:tags>
+				<apigee:authentication required="false" />
+        <apigee:example url="/users/{user_id}/followers/{contact_id}.{format}?consumer_key={consumer_key}" />
+				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Checks if the user with contact_id is a follower of the given user.]]></doc>
 			</method>
 		</resource>
 
@@ -464,6 +494,20 @@
 
 		<resource path="me/followings/{contact_id}.{format}">
 			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
+			<method id="get_me_followings" name="GET" apigee:displayName="me/followings/contact_id (GET)">
+				<apigee:tags>
+					<apigee:tag primary="true">Users</apigee:tag>
+					<apigee:tag>Me</apigee:tag>
+					<apigee:tag>Followings</apigee:tag>
+				</apigee:tags>
+				<apigee:authentication required="true" />
+				<apigee:example url="/me/followings/{contact_id}.{format}" />
+				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Checks if the user with the id contact_id is in the logged-in user's list of contacts.]]></doc>
+			</method>
+		</resource>
+
+		<resource path="me/followings/{contact_id}.{format}">
+			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
 			<method id="put_me_followings" name="PUT" apigee:displayName="me/followings/contact_id (PUT)">
 				<apigee:tags>
 					<apigee:tag primary="true">Users</apigee:tag>
@@ -500,6 +544,20 @@
 				<apigee:authentication required="true" />
 				<apigee:example url="/me/followers.{format}" />
 				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Returns a collection of users who follow the logged-in user]]></doc>
+			</method>
+		</resource>
+
+		<resource path="me/followers/{contact_id}.{format}">
+			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
+			<method id="get_me_followers" name="GET" apigee:displayName="me/followers/contact_id (GET)">
+				<apigee:tags>
+					<apigee:tag primary="true">Users</apigee:tag>
+					<apigee:tag>Me</apigee:tag>
+					<apigee:tag>Followers</apigee:tag>
+				</apigee:tags>
+				<apigee:authentication required="true" />
+				<apigee:example url="/me/followers/{contact_id}.{format}" />
+				<doc title="" apigee:url="http://github.com/soundcloud/api/wiki/10.1-Resources:-users"><![CDATA[Checks if the user with the id contact_id is a follower of the logged-in user]]></doc>
 			</method>
 		</resource>
 
