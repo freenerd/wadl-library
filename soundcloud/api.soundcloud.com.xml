@@ -285,7 +285,7 @@
 		<resource path="users/{user_id}/followings/{contact_id}.{format}">
 			<param name="user_id" required="true" type="xsd:string" style="query" default="183" />
 			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
-			<method id="get_user_followings" name="GET" apigee:displayName="users/user_id/followings/contact_id (GET)">
+			<method id="get_user_following" name="GET" apigee:displayName="users/user_id/followings/contact_id (GET)">
 				<apigee:tags>
 					<apigee:tag primary="true">Users</apigee:tag>
 					<apigee:tag>User</apigee:tag>
@@ -494,7 +494,7 @@
 
 		<resource path="me/followings/{contact_id}.{format}">
 			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
-			<method id="get_me_followings" name="GET" apigee:displayName="me/followings/contact_id (GET)">
+			<method id="get_me_following" name="GET" apigee:displayName="me/followings/contact_id (GET)">
 				<apigee:tags>
 					<apigee:tag primary="true">Users</apigee:tag>
 					<apigee:tag>Me</apigee:tag>
@@ -549,7 +549,7 @@
 
 		<resource path="me/followers/{contact_id}.{format}">
 			<param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
-			<method id="get_me_followers" name="GET" apigee:displayName="me/followers/contact_id (GET)">
+			<method id="get_me_follower" name="GET" apigee:displayName="me/followers/contact_id (GET)">
 				<apigee:tags>
 					<apigee:tag primary="true">Users</apigee:tag>
 					<apigee:tag>Me</apigee:tag>
