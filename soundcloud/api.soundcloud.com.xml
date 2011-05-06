@@ -478,8 +478,7 @@
       <!-- Same as GET users/{user_id} -->
       <method id="get_me" name="GET" apigee:displayName="me (GET)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
         <apigee:example url="/me.{format}" />
@@ -490,8 +489,7 @@
     <resource path="me.{format}">
       <method id="put_me" name="PUT" apigee:displayName="me (PUT)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
         <apigee:example url="/me.{format}" />
@@ -502,8 +500,7 @@
     <resource path="me/tracks.{format}">
       <method id="get_me_tracks" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Tracks</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -515,8 +512,7 @@
     <resource path="me/comments.{format}">
       <method id="get_me_comments" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Comments</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -528,8 +524,7 @@
     <resource path="me/followings.{format}">
       <method id="get_me_followings" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followings</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -542,8 +537,7 @@
       <param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
       <method id="get_me_following" name="GET" apigee:displayName="me/followings/contact_id (GET)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followings</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -556,8 +550,7 @@
       <param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
       <method id="put_me_followings" name="PUT" apigee:displayName="me/followings/contact_id (PUT)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followings</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -570,8 +563,7 @@
       <param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
       <method id="delete_me_followings" name="DELETE" apigee:displayName="me/followings/contact_id (DELETE)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followings</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -583,8 +575,7 @@
     <resource path="me/followers.{format}">
       <method id="get_me_followers" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followers</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -597,8 +588,7 @@
       <param name="contact_id" required="true" type="xsd:string" style="query" default="183" />
       <method id="get_me_follower" name="GET" apigee:displayName="me/followers/contact_id (GET)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Followers</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -610,8 +600,7 @@
     <resource path="me/favorites.{format}">
       <method id="get_me_favorites" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Favorites</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -624,8 +613,7 @@
       <param name="track_id" required="true" type="xsd:string" style="query" default="291" />
       <method id="put_me_favorites" name="PUT" apigee:displayName="me/favorites/track_id (PUT)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Favorites</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -638,8 +626,7 @@
       <param name="track_id" required="true" type="xsd:string" style="query" default="291" />
       <method id="delete_me_favorites" name="DELETE" apigee:displayName="me/favorites/track_id (DELETE)">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Favorites</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -651,8 +638,7 @@
     <resource path="me/groups.{format}">
       <method id="get_me_groups" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Groups</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
@@ -664,8 +650,7 @@
     <resource path="me/playlists.{format}">
       <method id="get_me_playlists" name="GET">
         <apigee:tags>
-          <apigee:tag primary="true">Users</apigee:tag>
-          <apigee:tag>Me</apigee:tag>
+          <apigee:tag primary="true">Me</apigee:tag>
           <apigee:tag>Playlists</apigee:tag>
         </apigee:tags>
         <apigee:authentication required="true" />
